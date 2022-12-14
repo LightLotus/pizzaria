@@ -58,10 +58,10 @@ const FeaturedProducts = () => {
     },
   ];
   return (
-    <div className="p-10 bg-amber-50">
+    <div className="md:p-10 p-4 bg-amber-50 text-[0.8rem] md:text-[1rem]">
       <div>
         <div className="flex justify-between items-center">
-          <h3 className="font-bold text-[2rem]">Featured Product</h3>
+          <h3 className="font-bold md:text-[2rem] text-[1.5rem]">Featured Product</h3>
           <Link
             className="uppercase underline  hover:text-[#FFCC06] ease-in duration-300"
             to="/menu"
@@ -70,7 +70,7 @@ const FeaturedProducts = () => {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-3 pt-10 gap-10">
+      <div className="grid md:grid-cols-3 grid-cols-1 pt-10 gap-10">
         {items.map((item) => {
           return (
             <Link

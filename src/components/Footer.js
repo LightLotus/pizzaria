@@ -6,16 +6,20 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logoFooter from "../assets/logo-footer.svg";
 import { Link } from "react-router-dom";
+import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <div className="bg-zinc-900 text-white p-10 flex justify-between items-center">
+    <div className="bg-zinc-900 text-white p-10 md:flex md:justify-between md:items-center text-center md:text-left">
       <div>
         <img src={logoFooter} alt="logofooter" />
-        <p className="mt-2">Copyright &#169; 2022</p>
+        <div className="flex items-center mt-4">
+          <FontAwesomeIcon className="text-[2rem]" icon={faLocationArrow} />
+          <p className="ml-4">Borromeo St., Surigao City 8400</p>
+        </div>
       </div>
 
-      <ul className="flex gap-6">
+      <ul className="leading-10 my-6 md:my-0">
         <li>
           <Link className="hover:text-[#FFCC06] ease-in duration-300">
             Menu
@@ -31,6 +35,8 @@ const Footer = () => {
             Contact Us
           </Link>
         </li>
+      </ul>
+      <ul className="leading-10 ">
         <li>
           <Link className="hover:text-[#FFCC06] ease-in duration-300">
             Terms & Conditions
@@ -41,13 +47,14 @@ const Footer = () => {
             Privacy Policy
           </Link>
         </li>
+        <li>Copyright &#169; 2022</li>
       </ul>
       <div>
-        <p className="font-bold">
+        <p className="font-bold mt-6 md:mt-0">
           Delivery Hotline:
           <span className="text-[#FFCC06] text-[2rem] block">1234-5678</span>
         </p>
-        <div className="text-[1.5rem] flex gap-6 mt-4">
+        <div className="text-[1.5rem] flex gap-6 mt-4 justify-center md:justify-start">
           <FontAwesomeIcon
             className="cursor-pointer hover:text-[#FFCC06] ease-in duration-300"
             icon={faFacebook}

@@ -79,7 +79,7 @@ const Layout = () => {
       </nav>
 
       {/* mobile navbar */}
-      <nav className="bg-white fixed top-0 left-0 w-[100vw] p-6 z-[999] md:hidden flex justify-between items-center">
+      <nav className="bg-white fixed top-0 left-0 w-[100vw] p-4 z-[999] md:hidden flex justify-between items-center">
         <Link to="/">
           <img src={logo} className="w-3/5" alt="" />
         </Link>

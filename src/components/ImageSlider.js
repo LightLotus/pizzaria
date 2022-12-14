@@ -24,9 +24,9 @@ const ImageSlider = () => {
 
   return (
     // container div
-    <div className="relative overflow-hidden mt-5 h-[100vh]">
+    <div className="relative overflow-hidden mt-[5.5rem] md:mt-5 md:h-[100vh]">
       {/* //arrowcontainer div*/}
-      <div className="absolute flex justify-between top-[50%] z-[2] text-white w-full px-10 text-[4rem]">
+      <div className="absolute flex justify-between top-[25%] md:top-[50%] z-[2] text-white w-full md:px-10 p-4 text-[4rem]">
         <div
           style={{ left: 0 }}
           onClick={() => {
@@ -34,7 +34,7 @@ const ImageSlider = () => {
           }}
         >
           <FontAwesomeIcon
-            className="cursor-pointer"
+            className="cursor-pointer w-[3rem] md:w-[unset]"
             icon={faArrowCircleLeft}
           />
         </div>
@@ -45,7 +45,7 @@ const ImageSlider = () => {
           }}
         >
           <FontAwesomeIcon
-            className="cursor-pointer"
+            className="cursor-pointer w-[3rem] md:w-[unset]"
             icon={faArrowCircleRight}
           />
         </div>
