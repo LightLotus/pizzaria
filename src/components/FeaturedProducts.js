@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import ItemThumb from "./ItemThumb";
 const FeaturedProducts = () => {
   const items = [
     {
@@ -73,29 +73,7 @@ const FeaturedProducts = () => {
       <div className="grid md:grid-cols-3 grid-cols-1 pt-10 gap-10">
         {items.map((item) => {
           return (
-            <Link
-              to={`/product/${item.id}`}
-              key={item.id}
-              className="bg-white flex items-center drop-shadow-md rounded-xl"
-            >
-              <img
-                src={item.image}
-                className="w-1/4 h-full object-cover rounded-l-xl"
-                alt=""
-              />
-              <div className="p-4 leading-none">
-                <h3 className="font-bold">{item.name}</h3>
-                <p className="my-4">{item.description}</p>
-                <div className="flex justify-between items-center">
-                  <p className="text-[1.2rem] font-medium">₱{item.price}.00</p>
-                  <button
-                    className="bg-[#FFCC06] hover:bg-[#ffcd06a5] ease-in duration-300 p-2 w-2/5 text-center rounded-md uppercase"
-                  >
-                    Order
-                  </button>
-                </div>
-              </div>
-            </Link>
+            <ItemThumb id={item.id} image={item.image} name={item.name} description={item.description} price={item.price}/>
           );
         })}
       </div>
