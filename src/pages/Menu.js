@@ -130,7 +130,7 @@ const Menu = () => {
       <div className="grid md:grid-cols-3 grid-cols-1 pt-10 gap-10">
         {items.map((item) => {
           return (
-          <ItemThumb id={item.id} image={item.image} description={item.description} name={item.name} price={item.price}/>
+          <ItemThumb key={item.id} id={item.id} image={item.image} description={item.description} name={item.name} price={item.price}/>
           );
         })}
       </div>

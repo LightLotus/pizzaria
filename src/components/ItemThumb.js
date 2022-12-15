@@ -4,7 +4,6 @@ const ItemThumb = ({ id, image, name, description, price }) => {
   return (
     <Link
       to={`/product/${id}`}
-      key={id}
       className="bg-white flex items-center drop-shadow-md rounded-xl"
     >
       <img
