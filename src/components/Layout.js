@@ -27,7 +27,7 @@ const Layout = () => {
         </Link>
         <ul className="uppercase flex gap-10">
           <li>
-            <Link className="hover:text-[#FFCC06] ease-in duration-300" to="/">
+            <Link to="/" className="hover:text-[#FFCC06] ease-in duration-300">
               home
             </Link>
           </li>

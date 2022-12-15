@@ -21,17 +21,17 @@ const Footer = () => {
 
       <ul className="leading-10 my-6 md:my-0">
         <li>
-          <Link className="hover:text-[#FFCC06] ease-in duration-300">
+          <Link to="/menu" className="hover:text-[#FFCC06] ease-in duration-300">
             Menu
           </Link>
         </li>
         <li>
-          <Link className="hover:text-[#FFCC06] ease-in duration-300">
+          <Link to="/bookaparty" className="hover:text-[#FFCC06] ease-in duration-300">
             Book a party
           </Link>
         </li>
         <li>
-          <Link className="hover:text-[#FFCC06] ease-in duration-300">
+          <Link to="/contactus" className="hover:text-[#FFCC06] ease-in duration-300">
             Contact Us
           </Link>
         </li>
