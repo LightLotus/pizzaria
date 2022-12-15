@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="bg-zinc-900 text-white p-10 md:flex md:justify-between md:items-center text-center md:text-left">
       <div>
-        <img src={logoFooter} alt="logofooter" />
+        <img className="w-3/5 block mx-auto md:mx-0 md:w-full" src={logoFooter} alt="logofooter" />
         <div className="flex items-center mt-4">
           <FontAwesomeIcon className="text-[2rem]" icon={faLocationArrow} />
           <p className="ml-4">Borromeo St., Surigao City 8400</p>

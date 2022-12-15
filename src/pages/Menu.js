@@ -137,7 +137,7 @@ const Menu = () => {
             >
               <img
                 src={item.image}
-                className="w-1/4 h-full object-cover rounded-l-xl"
+                className="w-full h-full object-cover rounded-l-xl"
                 alt=""
               />
               <div className="p-4 leading-none">

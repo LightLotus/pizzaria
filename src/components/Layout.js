@@ -47,14 +47,6 @@ const Layout = () => {
               book a party
             </Link>
           </li>
-          <li>
-            <Link
-              className="hover:text-[#FFCC06] ease-in duration-300"
-              to="/contactus"
-            >
-              contact us
-            </Link>
-          </li>
         </ul>
         <div className="flex items-center gap-10 uppercase">
           <Link to="/cart" className="text-[1.5rem]">
@@ -83,13 +75,42 @@ const Layout = () => {
         <Link to="/">
           <img src={logo} className="w-3/5" alt="" />
         </Link>
-        <div onClick={handleMenu}>
+        <div className="absolute z-10 right-0 pr-6" onClick={handleMenu}>
           {!menu ? (
             <FontAwesomeIcon className="text-[1.8rem]" icon={faBars} />
           ) : (
             <FontAwesomeIcon className="text-[1.8rem]" icon={faClose} />
           )}
         </div>
+        <ul
+          className={
+            !menu
+              ? "animate-[popout_0.3s_linear] hidden"
+              : "absolute top-0 right-0 h-screen w-3/4 bg-amber-50 drop-shadow-xl px-10 pt-24 uppercase animate-[popin_0.3s_linear]"
+          }
+        >
+          <li>
+            <Link to="/" className="hover:text-[#FFCC06] ease-in duration-300">
+              home
+            </Link>
+          </li>
+          <li className="my-6">
+            <Link
+              className="hover:text-[#FFCC06] ease-in duration-300"
+              to="/menu"
+            >
+              menu
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-[#FFCC06] ease-in duration-300"
+              to="/bookaparty"
+            >
+              book a party
+            </Link>
+          </li>
+        </ul>
       </nav>
       <Outlet />
       <Footer />
