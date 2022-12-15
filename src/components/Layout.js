@@ -63,16 +63,16 @@ const Layout = () => {
           <div className="flex items-center gap-5">
             <Link
               className="hover:text-[#FFCC06] ease-in duration-300"
-              to="/signup"
+              to="/login"
             >
-              Sign Up
+              Login
             </Link>
             <span>|</span>
             <Link
               className="hover:text-[#FFCC06] ease-in duration-300"
-              to="/login"
+              to="/signup"
             >
-              Login
+              Sign Up
             </Link>
           </div>
         </div>
