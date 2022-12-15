@@ -2,7 +2,7 @@ import pizzaparty from "../assets/pizzaparty.png";
 import spices from "../assets/spices.png";
 const Bookaparty = () => {
   return (
-    <div className="md:p-10 p-4 bg-amber-50 text-[0.8rem] md:text-[1rem] mt-[5.5rem] md:mt-[8rem] relative pb-10 md:pb-0">
+    <div className="md:p-10 p-4 bg-amber-50 md:text-[1rem] mt-[5.5rem] md:mt-[8rem] relative pb-10 md:pb-0">
       <img
         src={spices}
         alt=""
