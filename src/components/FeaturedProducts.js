@@ -73,7 +73,7 @@ const FeaturedProducts = () => {
       <div className="grid md:grid-cols-3 grid-cols-1 pt-10 gap-10">
         {items.map((item) => {
           return (
-            <ItemThumb id={item.id} image={item.image} name={item.name} description={item.description} price={item.price}/>
+            <ItemThumb id={item.id} key={item.id} image={item.image} name={item.name} description={item.description} price={item.price}/>
           );
         })}
       </div>

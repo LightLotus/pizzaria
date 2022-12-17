@@ -31,8 +31,8 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <Link to="/contactus" className="hover:text-[#FFCC06] ease-in duration-300">
-            Contact Us
+          <Link to="/cart" className="hover:text-[#FFCC06] ease-in duration-300">
+            Cart
           </Link>
         </li>
       </ul>

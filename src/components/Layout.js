@@ -110,6 +110,22 @@ const Layout = () => {
               book a party
             </Link>
           </li>
+          <li className="my-6">
+            <Link
+              className="hover:text-[#FFCC06] ease-in duration-300"
+              to="/login"
+            >
+              login
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-[#FFCC06] ease-in duration-300"
+              to="/signup"
+            >
+              signup
+            </Link>
+          </li>
         </ul>
       </nav>
       <Outlet />

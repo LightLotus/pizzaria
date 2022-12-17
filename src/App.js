@@ -4,6 +4,8 @@ import Menu from "./pages/Menu";
 import Bookaparty from "./pages/Bookaparty";
 import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/bookaparty" element={<Bookaparty />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Route>
         </Routes>
       </ScrollToTop>
