@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { faFacebookF, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 
 const Login = () => {
   return (
@@ -20,12 +21,15 @@ const Login = () => {
             id="email"
             placeholder="Enter email"
           />
-          <input
-            className="block w-full border-b-[1px] focus:outline-none p-2 border-black"
-            type="password"
-            id="password"
-            placeholder="Enter password"
-          />
+          <div className="relative">
+            <input
+              className="block w-full border-b-[1px] focus:outline-none p-2 border-black"
+              type="password"
+              id="password"
+              placeholder="Enter password"
+            />
+            <FontAwesomeIcon className="opacity-25 absolute top-0 right-0 translate-y-[100%] cursor-pointer hover:opacity-100 active:opacity-100" icon={faEyeSlash}/>
+          </div>
         </div>
         <div className="flex justify-between items-center text-[0.8rem]">
           <div className="flex items-center gap-2 mt-4">
