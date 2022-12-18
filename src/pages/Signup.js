@@ -68,7 +68,7 @@ const Signup = () => {
         </div>
         <button
           type="submit"
-          className="block bg-[#FFCC06] hover:bg-[#ffcd068b] ease-in duration-300 p-2 w-full rounded-md font-bold mt-6 mx-auto"
+          className="block bg-[#FFCC06] hover:bg-[#ffcd068b] ease-in duration-300 p-2 w-full md:w-1/2 rounded-md font-bold mt-6 mx-auto"
         >
           Create Account
         </button>
