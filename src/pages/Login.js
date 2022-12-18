@@ -11,7 +11,7 @@ const Login = () => {
         <p className="my-2 md:my-0">
           New user?
           <Link className="text-[#FFCC06] ml-2" to="/signup">
-            Login
+            Signup
           </Link>
         </p>
         <div className="mt-6">
