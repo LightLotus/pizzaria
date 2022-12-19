@@ -9,11 +9,11 @@ module.exports = {
           "100%": { right: "0" },
         },
         popout: {
-          "0%": {right: "0"},
-          "100%": {right: "100%"}
-        }
+          "0%": { right: "0" },
+          "100%": { right: "100%" },
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

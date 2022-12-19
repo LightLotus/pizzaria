@@ -1,7 +1,7 @@
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ItemThumb from "../components/ItemThumb";
-
+import MenuSlider from "./MenuSlider";
 const Menu = () => {
   const items = [
     {
@@ -117,20 +117,29 @@ const Menu = () => {
     <div className="md:p-10 p-4 bg-amber-50 text-[0.8rem] md:text-[1rem] mt-[5.5rem] md:mt-[8rem]">
       <div>
         <div className="flex justify-between items-center">
-          <h3 className="font-bold md:text-[2rem] text-[1.5rem]">All Products</h3>
+          <h3 className="font-bold md:text-[2rem] text-[1.5rem]">
+            All Products
+          </h3>
           <div
             className="uppercase hover:text-[#FFCC06] ease-in duration-300 cursor-pointer"
             to="/menu"
           >
             sort by
-            <FontAwesomeIcon className="ml-4" icon={faAngleDown}/>
+            <FontAwesomeIcon className="ml-4" icon={faAngleDown} />
           </div>
         </div>
       </div>
       <div className="grid md:grid-cols-3 grid-cols-1 pt-10 gap-10">
         {items.map((item) => {
           return (
-          <ItemThumb key={item.id} id={item.id} image={item.image} description={item.description} name={item.name} price={item.price}/>
+            <ItemThumb
+              key={item.id}
+              id={item.id}
+              image={item.image}
+              description={item.description}
+              name={item.name}
+              price={item.price}
+            />
           );
         })}
       </div>
