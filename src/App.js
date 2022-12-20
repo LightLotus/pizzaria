@@ -6,7 +6,6 @@ import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import MenuSlider from "./pages/MenuSlider";
 import Pizzaa from "./pages/menuoptions/Pizzaa";
 import Pizzab from "./pages/menuoptions/Pizzab";
 import Pizzac from "./pages/menuoptions/Pizzac";
@@ -42,38 +41,38 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="/menu" element={<Menu />} />
+            <Route path="/menu" element={<Menu />}>
+              <Route path="/menu/pizzaa" element={<Pizzaa />} />
+              <Route path="/menu/pizzab" element={<Pizzab />} />
+              <Route path="/menu/pizzac" element={<Pizzac />} />
+              <Route path="/menu/pizzad" element={<Pizzad />} />
+              <Route path="/menu/pizzae" element={<Pizzae />} />
+              <Route path="/menu/pizzaf" element={<Pizzaf />} />
+              <Route path="/menu/pizzag" element={<Pizzag />} />
+              <Route path="/menu/pizzah" element={<Pizzah />} />
+              <Route path="/menu/pizzai" element={<Pizzai />} />
+              <Route path="/menu/pizzaj" element={<Pizzaj />} />
+              <Route path="/menu/pizzak" element={<Pizzak />} />
+              <Route path="/menu/pizzal" element={<Pizzal />} />
+              <Route path="/menu/pizzam" element={<Pizzam />} />
+              <Route path="/menu/pizzan" element={<Pizzan />} />
+              <Route path="/menu/pizzao" element={<Pizzao />} />
+              <Route path="/menu/pizzap" element={<Pizzap />} />
+              <Route path="/menu/pizzaq" element={<Pizzaq />} />
+              <Route path="/menu/pizzar" element={<Pizzar />} />
+              <Route path="/menu/pizzas" element={<Pizzas />} />
+              <Route path="/menu/pizzat" element={<Pizzat />} />
+              <Route path="/menu/pizzau" element={<Pizzau />} />
+              <Route path="/menu/pizzav" element={<Pizzav />} />
+              <Route path="/menu/pizzaw" element={<Pizzaw />} />
+              <Route path="/menu/pizzax" element={<Pizzax />} />
+              <Route path="/menu/pizzay" element={<Pizzay />} />
+              <Route path="/menu/pizzaz" element={<Pizzaz />} />
+            </Route>
             <Route path="/bookaparty" element={<Bookaparty />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/menuslider" element={<MenuSlider />}>
-              <Route path="/menuslider/pizzaa" element={<Pizzaa />} />
-              <Route path="/menuslider/pizzab" element={<Pizzab />} />
-              <Route path="/menuslider/pizzac" element={<Pizzac />} />
-              <Route path="/menuslider/pizzad" element={<Pizzad />} />
-              <Route path="/menuslider/pizzae" element={<Pizzae />} />
-              <Route path="/menuslider/pizzaf" element={<Pizzaf />} />
-              <Route path="/menuslider/pizzag" element={<Pizzag />} />
-              <Route path="/menuslider/pizzah" element={<Pizzah />} />
-              <Route path="/menuslider/pizzai" element={<Pizzai />} />
-              <Route path="/menuslider/pizzaj" element={<Pizzaj />} />
-              <Route path="/menuslider/pizzak" element={<Pizzak />} />
-              <Route path="/menuslider/pizzal" element={<Pizzal />} />
-              <Route path="/menuslider/pizzam" element={<Pizzam />} />
-              <Route path="/menuslider/pizzan" element={<Pizzan />} />
-              <Route path="/menuslider/pizzao" element={<Pizzao />} />
-              <Route path="/menuslider/pizzap" element={<Pizzap />} />
-              <Route path="/menuslider/pizzaq" element={<Pizzaq />} />
-              <Route path="/menuslider/pizzar" element={<Pizzar />} />
-              <Route path="/menuslider/pizzas" element={<Pizzas />} />
-              <Route path="/menuslider/pizzat" element={<Pizzat />} />
-              <Route path="/menuslider/pizzau" element={<Pizzau />} />
-              <Route path="/menuslider/pizzav" element={<Pizzav />} />
-              <Route path="/menuslider/pizzaw" element={<Pizzaw />} />
-              <Route path="/menuslider/pizzax" element={<Pizzax />} />
-              <Route path="/menuslider/pizzay" element={<Pizzay />} />
-              <Route path="/menuslider/pizzaz" element={<Pizzaz />} />
-            </Route>
+
           </Route>
         </Routes>
       </ScrollToTop>
